@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Cristian Andrey Caicedo Obando</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-    /* NAVBAR */
+/* NAVBAR */
 .navbar {
     background: #082f6a;
     padding: 12px 0;
@@ -19,11 +24,11 @@
 
 .navbar ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar a {
@@ -37,80 +42,77 @@
     text-decoration: underline;
 }
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap');
-
-    body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        background: #F5F7FA;
-        color: #333;
-    }
-
-    header {
-        text-align: center;
-        padding: 50px 20px;
-        background: #0A2A43;
-        color: white;
-        border-bottom: 4px solid #062034;
-    }
-
-    header img {
-        width: 180px;
-        border-radius: 12px; /* foto cuadrada elegante */
-        box-shadow: 0 0 20px rgba(0,0,0,0.25);
-        margin-bottom: 20px;
-    }
-
- header h1 {
-    font-size: 40px;
-    margin: 8px 0 0;
-    font-weight: 800;
-    letter-spacing: 1px;
+/* GENERAL */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #F5F7FA;
+    color: #333;
 }
 
-header h2 {
-    margin: 4px 0 6px;
-    font-size: 22px;
-    font-weight: 300;
-    color: #cfe0ff;
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    color: #0d47a1;
+    border-bottom: 3px solid #0d47a1;
 }
 
-header p {
-    margin-top: 8px;
-    font-size: 17px;
-    color: #dbe6ff;
-    font-weight: 300;
+header img {
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    margin-bottom: 25px;
 }
 
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
 
-    section {
-        padding: 40px;
-        max-width: 900px;
-        margin: auto;
-    }
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #1A73E8;
+    border-left: 5px solid #1A73E8;
+    padding-left: 10px;
+    font-weight: 600;
+}
 
-    h2 {
-        font-family: 'Poppins', sans-serif;
-        color: #1A73E8;
-        border-left: 5px solid #1A73E8;
-        padding-left: 10px;
-        font-weight: 600;
-    }
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
 
-    footer {
-        background: #0A2A43;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        margin-top: 40px;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-    }
+footer {
+    background: #0A2A43;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
 
-    ul li {
-        margin-bottom: 10px;
-    }
-    /* BOTÓN FLOTANTE DE WHATSAPP */
+/* BOTÓN DESCARGAR CV */
+.cv-btn {
+    display: inline-block;
+    background: #0d47a1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.cv-btn:hover {
+    background: #082f6a;
+}
+
+/* WHATSAPP FLOTANTE */
 .whatsapp-button {
     position: fixed;
     bottom: 25px;
@@ -123,285 +125,111 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 32px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
-
 .whatsapp-button:hover {
     transform: scale(1.1);
     background: #1ebe5d;
 }
-
 </style>
-
-
 </head>
+
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
     <ul>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li> 
-         <li><a href="#cv">Descargar CV</a></li>
+        <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
 
-    <section id="cv">
-    <h2>Descargar CV</h2>
-    <a href="CV_Cristian_Andrey_Caicedo.pdf" download>Descargar CV en PDF</a>
-</section>
-
-        
-
-    <a href="CV_Cristian_Andrey_Caicedo.pdf" download 
-       style="
-           display: inline-block;
-           background: #0d47a1;
-           color: white;
-           padding: 12px 20px;
-           text-decoration: none;
-           border-radius: 8px;
-           font-size: 16px;
-           font-weight: 600;
-           box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-           transition: 0.3s;
-       "
-       onmouseover="this.style.background='#082f6a'"
-       onmouseout="this.style.background='#0d47a1'">
-        Descargar CV en PDF
-    </a>
-</section>
-
-    </ul>
-</nav>
-<!-- BOTÓN DE DESCARGA DE CV -->
-<div style="text-align: center; margin: 20px 0;">
-    <a href="CV_Cristian_Andrey_Caicedo.pdf" download
-       style="
-       background: #0d47a1;
-       color: white;
-       padding: 12px 25px;
-       border-radius: 8px;
-       text-decoration: none;
-       font-size: 16px;
-       font-weight: 600;
-       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-       transition: 0.3s;">
-       Descargar CV (PDF)
+<!-- BOTÓN DESCARGA CV -->
+<div style="text-align: center; margin-top: 20px;">
+    <a href="CV_Cristian_Andrey_Caicedo.pdf" download class="cv-btn">
+        Descargar CV (PDF)
     </a>
 </div>
 
-<header style="
-    text-align: center;
-    padding: 50px 20px;
-    background: white;
-    color: #0d47a1;
-    border-bottom: 3px solid #0d47a1;
-">
-    <img src="imagen tipo documento cristhian.jpg" alt="Foto de Cristian" style="
-        width: 160px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-        margin-bottom: 25px;
-    ">
-    
-    <h1 style="
-        margin: 0;
-        font-size: 36px;
-        font-weight: 700;
-    ">Cristian Andrey Caicedo Obando</h1>
-
-    <h2 style="
-        margin: 10px 0 0;
-        font-size: 20px;
-        font-weight: 400;
-        color: #333;
-    ">Estudiante de Ingeniería de Software (cursando 5° semestre)</h2>
-
-    <p style="
-        margin-top: 8px;
-        font-size: 15px;
-        color: #555;
-    ">Portafolio profesional — Estilo minimalista</p>
+<!-- HEADER -->
+<header>
+    <img src="imagen tipo documento cristhian.jpg" alt="Foto de Cristian">
+    <h1>Cristian Andrey Caicedo Obando</h1>
+    <h2>Estudiante de Ingeniería de Software – 5° semestre</h2>
+    <p>Portafolio profesional — Estilo minimalista</p>
 </header>
 
-<section id="sobre-mi" style="padding:40px; max-width:900px; margin:auto;">
+<!-- SOBRE MI -->
+<section id="sobre-mi">
     <h2>Sobre mí</h2>
-
-   <p>
-    Soy estudiante de Ingeniería de Software, cursando quinto semestre. Me apasiona el desarrollo web 
-    y la creación de interfaces funcionales, limpias y centradas en el usuario. Actualmente estoy fortaleciendo 
-    mis habilidades mediante proyectos prácticos y el aprendizaje constante de nuevas tecnologías.
-</p>
-
-<p>
-    Me considero una persona responsable, dedicada y con una fuerte motivación por crecer profesionalmente en el 
-    mundo del desarrollo. Mi objetivo es convertirme en un desarrollador capaz de aportar soluciones reales y 
-    eficientes, combinando creatividad, lógica y buenas prácticas.
-</p>
-
+    <p>
+        Soy estudiante de Ingeniería de Software, cursando quinto semestre. Me apasiona el desarrollo web 
+        y la creación de interfaces funcionales, limpias y centradas en el usuario.
+    </p>
+    <p>
+        Me considero una persona responsable, dedicada y con una fuerte motivación por crecer profesionalmente.
+    </p>
 </section>
 
-
-
-
+<!-- EXPERIENCIA -->
 <section id="experiencia">
     <h2>Experiencia</h2>
-
     <p>
-        Soy estudiante de <strong>Ingeniería de Software</strong>, cursando 
-        <strong>quinto semestre</strong>, con sólidos fundamentos en programación, 
-        desarrollo web y análisis de sistemas. A lo largo de mi formación he participado 
-        en actividades académicas, ejercicios prácticos y proyectos guiados que me han 
-        permitido desarrollar un pensamiento lógico, estructurado y orientado a soluciones 
-        tecnológicas.
-    </p>
-
-    <p>
-        Cuento con experiencia técnica previa como <strong>Técnico en Diseño Gráfico</strong>,
-        lo que me ha permitido adquirir habilidades en creación de contenido digital, manejo de 
-        herramientas de edición y diseño visual aplicado a proyectos personales y académicos.
-    </p>
-
-    <h3>Experiencia independiente</h3>
-    <ul>
-        <li><strong>Gestión de campañas en redes sociales (Facebook Ads):</strong>  
-            Creación de anuncios, segmentación de audiencias y optimización de resultados 
-            para emprendimientos locales.
-        </li>
-
-        <li><strong>Soporte técnico básico:</strong>  
-            Mantenimiento preventivo, instalación de programas, limpieza del sistema y 
-            solución de fallas comunes para usuarios y pequeños negocios.
-        </li>
-
-        <li><strong>Proyectos prácticos en desarrollo web:</strong>  
-            Portafolios personales, páginas informativas y sistemas pequeños de práctica 
-            como inventarios, agendas digitales y formularios interactivos.  
-            <em>(Los iremos construyendo y se agregarán aquí con enlaces reales.)</em>
-        </li>
-    </ul>
-
-    <p>
-        Mi enfoque profesional combina tecnología, diseño y comunicación, permitiéndome crear 
-        soluciones funcionales, claras y con buen soporte visual.
+        Estudiante de Ingeniería de Software con fundamentos sólidos en programación y desarrollo web.
     </p>
 </section>
 
-
+<!-- SERVICIOS -->
 <section id="servicios">
     <h2>Servicios</h2>
-
     <ul>
-        <li><strong>Desarrollo de páginas web básicas</strong> para emprendimientos y profesionales.</li>
-        <li><strong>Creación de portafolios digitales</strong> modernos y profesionales.</li>
-        <li><strong>Gestión de campañas en Facebook Ads</strong> y manejo de redes sociales.</li>
-        <li><strong>Soporte técnico básico</strong> y mantenimiento preventivo.</li>
-        <li><strong>Instalación de software</strong> de forma segura.</li>
-        <li><strong>Desarrollo de sistemas pequeños</strong> (inventarios, registros, agendas).</li>
+        <li>Desarrollo de páginas web básicas.</li>
+        <li>Gestión de campañas Facebook Ads.</li>
+        <li>Instalación de software.</li>
+        <li>Soporte técnico básico.</li>
     </ul>
 </section>
 
-    <section id="habilidades">
+<!-- HABILIDADES -->
+<section id="habilidades">
     <h2>Habilidades</h2>
-
-    <p>
-        Estas son las habilidades técnicas y profesionales que he desarrollado a lo largo de mi formación
-        como estudiante de Ingeniería de Software y mediante experiencia práctica en proyectos, soporte técnico
-        y trabajos independientes.
-    </p>
-
-    <h3>🔹 Desarrollo y Programación</h3>
     <ul>
-        <li>HTML y CSS – creación de páginas web básicas y estructuras organizadas.</li>
-        <li>Conocimientos en Git y GitHub – manejo de repositorios, commits y GitHub Pages.</li>
-        <li>Fundamentos de programación y lógica computacional.</li>
-        <li>Desarrollo de pequeños sistemas como inventarios, formularios y agendas digitales.</li>
-    </ul>
-
-    <h3>🔹 Herramientas Digitales & Diseño</h3>
-    <ul>
-        <li>Diseño gráfico básico (formado como Técnico en Diseño Gráfico).</li>
-        <li>Edición de imágenes y contenido digital.</li>
-        <li>Creación de portafolios profesionales y páginas informativas.</li>
-    </ul>
-
-    <h3>🔹 Marketing Digital</h3>
-    <ul>
-        <li>Gestión de campañas en Facebook Ads.</li>
-        <li>Segmentación de audiencias y optimización de anuncios.</li>
-        <li>Creación de contenidos para redes sociales.</li>
-    </ul>
-
-    <h3>🔹 Soporte Técnico</h3>
-    <ul>
-        <li>Instalación de programas.</li>
-        <li>Mantenimiento preventivo y limpieza del sistema.</li>
-        <li>Solución de fallas comunes de software.</li>
-    </ul>
-
-    <h3>🔹 Competencias Profesionales</h3>
-    <ul>
-        <li>Responsabilidad y compromiso.</li>
-        <li>Aprendizaje rápido y adaptabilidad.</li>
-        <li>Trabajo en equipo y comunicación efectiva.</li>
-        <li>Actitud proactiva para resolver problemas.</li>
+        <li>HTML y CSS.</li>
+        <li>Git y GitHub.</li>
+        <li>Diseño gráfico básico.</li>
+        <li>Marketing digital.</li>
     </ul>
 </section>
 
+<!-- PROYECTOS -->
 <section id="proyectos">
     <h2>Proyectos</h2>
-
-    <p>
-        Estos son algunos de los proyectos en los que estoy trabajando actualmente como parte de mi formación en Ingeniería de Software 
-        y mi desarrollo profesional. Cada proyecto está orientado al fortalecimiento de habilidades técnicas reales y al aprendizaje 
-        práctico en desarrollo web y sistemas digitales.
-    </p>
-
-    <h3>a) Página web personal o portafolio profesional</h3>
-    <p>
-        Desarrollo de un portafolio moderno y funcional que incluye información profesional, experiencia, habilidades, proyectos y 
-        datos de contacto. El objetivo es demostrar dominio en HTML, CSS, diseño responsivo y buenas prácticas de presentación digital.
-    </p>
-
-    <h3>b) Sistema pequeño: Inventario o agenda digital</h3>
-    <p>
-        Creación de un sistema básico que permita registrar, consultar y gestionar información.  
-        Este proyecto fortalece el uso de lógica de programación, estructuras de datos, formularios interactivos y almacenamiento local.
-    </p>
-
-    <h3>c) Landing page profesional para emprendimientos</h3>
-    <p>
-        Desarrollo de una landing page enfocada en negocios pequeños, diseñada para presentar servicios, mostrar información clave y 
-        facilitar el contacto del cliente. Proyecto ideal para aplicar diseño, estructura visual y principios de marketing digital.
-    </p>
-
-    <p>
-        Estos proyectos se actualizarán con enlaces públicos y demostraciones interactivas a medida que se completen durante los próximos meses.
-    </p>
+    <p>Proyectos en desarrollo y prácticos para fortalecer habilidades.</p>
 </section>
 
+<!-- CONTACTO -->
 <section id="contacto">
     <h2>Contacto</h2>
-
     <p>
         📩 <strong>Email:</strong> caicedo1995andrey@gmail.com <br>
-        📱 <strong>Teléfono / WhatsApp:</strong> 314 226 4347 <br>
-        📍 <strong>Ubicación:</strong> Ibagué, Colombia
+        📱 <strong>WhatsApp:</strong> 314 226 4347 <br>
+        📍 <strong>Ibagué, Colombia</strong>
     </p>
 </section>
 
 <footer>
     © 2025 Cristian Andrey Caicedo Obando – Portafolio Web
 </footer>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
 <a href="https://wa.me/573142264347" class="whatsapp-button" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-
 </body>
 </html>
-
