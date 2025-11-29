@@ -5,42 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Cristian Andrey Caicedo Obando</title>
 
-    <!-- ICONOS FONT AWESOME -->
+    <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-/* NAVBAR */
-.navbar {
-    background: #082f6a;
-    padding: 12px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-/* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap');
+/* ---------------------------- */
+/*          ESTILOS GLOBALES   */
+/* ---------------------------- */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -49,26 +24,83 @@ body {
     color: #333;
 }
 
-/* HEADER */
+/* ---------------------------- */
+/*            NAVBAR            */
+/* ---------------------------- */
+
+.navbar {
+    background: #082f6a;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------------- */
+/*            HEADER            */
+/* ---------------------------- */
+
 header {
     text-align: center;
     padding: 50px 20px;
-    background: white;
-    color: #0d47a1;
+    background: #ffffff;
     border-bottom: 3px solid #0d47a1;
 }
 
 header img {
-    width: 180px;
+    width: 160px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 36px;
+header h1 {
+    margin: 10px 0 0;
+    font-size: 34px;
     font-weight: 700;
+    color: #0d47a1;
+}
+
+header h2 {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 8px 0 0;
+    color: #333;
+}
+
+header p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* ---------------------------- */
+/*     SECCIONES GENERALES      */
+/* ---------------------------- */
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 h2 {
@@ -76,39 +108,47 @@ h2 {
     color: #1A73E8;
     border-left: 5px solid #1A73E8;
     padding-left: 10px;
-    font-weight: 600;
 }
 
-/* SECCIONES */
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
+/* ---------------------------- */
+/*     BOTÓN CV                 */
+/* ---------------------------- */
 
-/* FOOTER */
-footer {
-    background: #0A2A43;
+.cv-btn {
+    display: inline-block;
+    margin: 20px auto;
+    background: #0d47a1;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-/* BOTÓN WHATSAPP */
+.cv-btn:hover {
+    background: #082f6a;
+}
+
+/* ---------------------------- */
+/*    BOTÓN WHATSAPP FLOTANTE   */
+/* ---------------------------- */
+
 .whatsapp-button {
     position: fixed;
     bottom: 25px;
     right: 25px;
     background: #25D366;
-    color: white;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    color: white;
+    font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     transition: 0.3s;
@@ -116,8 +156,27 @@ footer {
 
 .whatsapp-button:hover {
     transform: scale(1.1);
-    background: #1ebe5d;
 }
+
+/* ---------------------------- */
+/*         RESPONSIVE           */
+/* ---------------------------- */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .whatsapp-button {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+}
+
 </style>
 </head>
 
@@ -127,53 +186,58 @@ footer {
 <nav class="navbar">
     <ul>
         <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="CV_Cristian_Andrey_Caicedo.pdf" download>Descargar CV</a></li>
     </ul>
 </nav>
 
 <!-- HEADER -->
 <header>
     <img src="imagen tipo documento cristhian.jpg" alt="Foto de Cristian">
+
     <h1>Cristian Andrey Caicedo Obando</h1>
     <h2>Estudiante de Ingeniería de Software (5° semestre)</h2>
     <p>Portafolio profesional — Estilo minimalista</p>
+
+    <a href="CV_Cristian_Andrey_Caicedo.pdf" download class="cv-btn">
+        Descargar CV (PDF)
+    </a>
 </header>
 
-<!-- SOBRE MÍ -->
+<!-- -------- SOBRE MI -------- -->
 <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <p>Soy estudiante de Ingeniería de Software, cursando quinto semestre. Me apasiona el desarrollo web 
-    y la creación de interfaces funcionales, limpias y centradas en el usuario. Actualmente estoy fortaleciendo 
-    mis habilidades mediante proyectos prácticos y el aprendizaje constante de nuevas tecnologías.</p>
 
-    <p>Me considero una persona responsable, dedicada y con una fuerte motivación por crecer profesionalmente en el 
-    mundo del desarrollo. Mi objetivo es convertirme en un desarrollador capaz de aportar soluciones reales y 
-    eficientes, combinando creatividad, lógica y buenas prácticas.</p>
+    <p>Soy estudiante de Ingeniería de Software, cursando quinto semestre. Me apasiona el desarrollo web 
+    y la creación de interfaces funcionales, limpias y centradas en el usuario...</p>
+
+    <p>Me considero una persona responsable, dedicada y con una fuerte motivación por crecer profesionalmente...</p>
 </section>
 
-<!-- EXPERIENCIA -->
+<!-- -------- EXPERIENCIA -------- -->
 <section id="experiencia">
     <h2>Experiencia</h2>
 
-    <p>Soy estudiante de <strong>Ingeniería de Software</strong>, cursando 
-    <strong>quinto semestre</strong>, con sólidos fundamentos en programación, 
-    desarrollo web y análisis de sistemas.</p>
+    <p>
+        Soy estudiante de <strong>Ingeniería de Software</strong>, cursando 
+        <strong>quinto semestre</strong>, con sólidos fundamentos en programación...
+    </p>
 
-    <p>Cuento con experiencia técnica previa como <strong>Técnico en Diseño Gráfico</strong>,
-    lo que me ha permitido adquirir habilidades en creación de contenido digital y diseño visual.</p>
+    <p>
+        Cuento con experiencia técnica previa como <strong>Técnico en Diseño Gráfico</strong>...
+    </p>
 
     <h3>Experiencia independiente</h3>
     <ul>
-        <li><strong>Gestión de campañas en redes sociales (Facebook Ads)</strong></li>
-        <li><strong>Soporte técnico básico</strong></li>
-        <li><strong>Proyectos prácticos en desarrollo web</strong></li>
+        <li><strong>Gestión de campañas en Facebook Ads:</strong> creación de anuncios...</li>
+        <li><strong>Soporte técnico básico:</strong> mantenimiento preventivo...</li>
+        <li><strong>Proyectos en desarrollo web:</strong> portafolios, páginas informativas...</li>
     </ul>
 </section>
 
-<!-- HABILIDADES -->
+<!-- -------- HABILIDADES -------- -->
 <section id="habilidades">
     <h2>Habilidades</h2>
 
@@ -181,11 +245,10 @@ footer {
     <ul>
         <li>HTML y CSS</li>
         <li>Git y GitHub</li>
-        <li>Lógica de programación</li>
-        <li>Desarrollo de pequeños sistemas</li>
+        <li>Fundamentos de programación</li>
     </ul>
 
-    <h3>🔹 Diseño Digital</h3>
+    <h3>🔹 Diseño</h3>
     <ul>
         <li>Diseño gráfico básico</li>
         <li>Edición de imágenes</li>
@@ -194,50 +257,46 @@ footer {
     <h3>🔹 Marketing Digital</h3>
     <ul>
         <li>Facebook Ads</li>
-        <li>Creación de contenido</li>
-    </ul>
-
-    <h3>🔹 Competencias personales</h3>
-    <ul>
-        <li>Responsabilidad</li>
-        <li>Trabajo en equipo</li>
-        <li>Aprendizaje rápido</li>
+        <li>Segmentación</li>
     </ul>
 </section>
 
-<!-- PROYECTOS -->
+<!-- -------- PROYECTOS -------- -->
 <section id="proyectos">
     <h2>Proyectos</h2>
 
-    <h3>a) Página web personal</h3>
-    <p>Portafolio moderno con HTML y CSS.</p>
+    <h3>a) Portafolio profesional</h3>
+    <p>Desarrollo de un portafolio moderno...</p>
 
-    <h3>b) Sistema pequeño: Inventario o agenda digital</h3>
-    <p>Sistema básico de registro y consulta de información.</p>
+    <h3>b) Sistema pequeño: Inventario o agenda</h3>
+    <p>Creación de un sistema básico...</p>
 
-    <h3>c) Landing page para emprendimientos</h3>
-    <p>Diseño visual optimizado para captar clientes.</p>
+    <h3>c) Landing page profesional</h3>
+    <p>Página informativa para negocios pequeños...</p>
 </section>
 
-<!-- CONTACTO -->
+<!-- -------- CONTACTO -------- -->
 <section id="contacto">
     <h2>Contacto</h2>
+
     <p>
         📩 <strong>Email:</strong> caicedo1995andrey@gmail.com <br>
-        📱 <strong>Whatsapp:</strong> 314 226 4347 <br>
+        📱 <strong>Teléfono / WhatsApp:</strong> 314 226 4347 <br>
         📍 <strong>Ubicación:</strong> Ibagué, Colombia
     </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
     © 2025 Cristian Andrey Caicedo Obando – Portafolio Web
 </footer>
 
-<!-- BOTÓN WHATSAPP -->
+<!-- BOTÓN WHATSAPP FLOTANTE -->
 <a href="https://wa.me/573142264347" class="whatsapp-button" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 </body>
 </html>
+
 
